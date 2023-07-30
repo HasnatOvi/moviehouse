@@ -1,0 +1,46 @@
+.alphabet{
+    margin-top: 70px;
+    width: 100%;
+    color: white;
+}
+
+.alphabet__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background: var(--bg-clr);
+    height: 55px;
+    border-bottom: 1px solid var(--border-clr);
+    padding: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.alphabet__box span{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all ease 0.8s;
+    width: 33px;
+    padding: 20px 0;
+}
+
+.alphabet__box span:hover{
+    color: red;
+}
+
+.alphabet__box span:hover::before{
+    overflow: hidden;
+    content: " ";
+    width: 33px;
+    height: 1px;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    padding-right: 2px;
+    margin-left: -13px;
+
+
+}
