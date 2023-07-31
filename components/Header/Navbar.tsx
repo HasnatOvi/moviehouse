@@ -1,7 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import "./module.navbar.css"
-const Navbar = () => {
+import "./module.navbar.css";
+import { ReactElement } from 'react'
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+const Navbar = ():ReactElement => {
     return (
         <header className="navbar__header paddingX">
             <div className="navbar__brand">
@@ -9,8 +14,7 @@ const Navbar = () => {
                        width={255} height={55}
                 />
             </div>
-           <nav className="navbar"
-           >
+           <nav className="navbar">
                <ul className="navbar__items">
                    <li className="navbar__item">
                        <Link className="navbar__link" href="/">Movies</Link>
@@ -30,8 +34,10 @@ const Navbar = () => {
                </ul>
            </nav>
             <div className="navbar__searchBox">
-                <input type="text" placeholder="Search"/>
-
+                <form action="#">
+                    <input type="text" placeholder="Search"/>
+                    <FontAwesomeIcon className='icon__size search__icon' icon={faSearch}/>
+                </form>
             </div>
         </header>
     );

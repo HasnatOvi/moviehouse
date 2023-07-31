@@ -9,6 +9,7 @@
     background-color: rgba(15,15,15,.99);
     box-shadow: 0 1px 5px rgba(0,0,0,.4);
     border-bottom: 1px solid #000;
+    z-index: 999;
 }
 .navbar__brand{
     background: rgba(255,255,255,.05);
@@ -39,6 +40,8 @@
 .navbar__item{
     list-style: none;
     padding-left: 20px;
+    margin-right: 18px;
+    margin-left: -28px;
 
 }
 
@@ -47,15 +50,26 @@
     color: gray;
     text-transform: capitalize;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
+    padding-right: 18px;
 }
 
+.navbar__link:hover{
+    color: var(--dark-red);
+}
 .navbar__searchBox
 {
     width: 440px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-right: -20px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .navbar__searchBox input{
@@ -77,4 +91,10 @@
     font-size: 14px;
     font-weight: 300;
     background: rgba(255,255,255,.1);
+}
+
+.search__icon{
+    display: inline-flex;
+    position: relative;
+    right: 36px;
 }

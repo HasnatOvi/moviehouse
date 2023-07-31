@@ -1,17 +1,49 @@
 :root{
-    --bg-clr:rgba(15,15,15,.99);
-    --text-color: rgba(208, 208, 208, 0.87);
-    --box-shadow: 0 1px 5px rgba(0,0,0,.4);
-    --border-clr: #383838
+    /*--bg-clr:rgba(15,15,15,.99);*/
+    --bg-clr: #0f0f0ffc;
+    /*--text-color: rgba(208, 208, 208, 0.87);*/
+    --text-color: #d0d0d0de;
+    /*--box-shadow: 0 1px 5px rgba(0,0,0,.4);*/
+    --box-shadow: #00000066;
+    --border-clr: #383838;
+
+    --nevy-blue: #000080;
+    --dark-red: #B30015;
+    --gord:#FFD700;
+    --creme:#F5F5DC;
+    --light-gray:#D3D3D3;
+    --charcola-gray:#36454F;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--text-color);
+
 }
 html,body{
     width: 100%;
+    background: var(--charcola-gray);
+    color: var(--text-color);
+}
+
+span,p,h1,h2,h3,h4,h5,h6{
+    line-height: 1.5rem;
+    /*letter-spacing: ;*/
+    vertical-align: baseline;
+}
+
+.bg__color{
+    background-color: var(--bg-clr);
+}
+
+.text__color{
+    color: var(--text-color);
+}
+
+.icon__size{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
 .paddingX{
     padding-left: 80px;
@@ -20,12 +52,19 @@ html,body{
     margin-left: auto;
 }
 
+.paddingLRT{
+    padding-left: 22px;
+    padding-right:22px;
+    padding-top: 30px;
+}
+
 .marginX{
     margin-right: 80px;
     margin-left: 80px;
 }
+
 .main {
-    height: 100vh;
+    /*height: 100vh;*/
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -33,11 +72,10 @@ html,body{
 
 
 .main__box{
-    background-color: rgba(15,15,15,.99);
+    background-color: var(--bg-clr);
     width: 100%;
     margin-right: 80px;
     margin-left: 80px;
-
     display: flex;
     justify-content: space-between;
 
@@ -46,7 +84,7 @@ html,body{
 .main__content{
     background: var(--bg-clr);
     width: 73%;
-    height: 100vh;
+    /*height: 100vh;*/
     padding-left: 22px;
     padding-right:22px;
     padding-top: 30px;
@@ -55,7 +93,7 @@ html,body{
 
 aside{
     width: 33%;
-    height: 100vh;
+    /*height: 100vh;*/
     background: var(--bg-clr);
     padding-left: 22px;
     padding-right:22px;

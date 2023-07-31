@@ -1,18 +1,20 @@
-import {Alphabet} from "@/components";
+import {Alphabet, ContactUs, Hero, WebSeries} from "@/components";
+
 
 export default function Home() {
   return (
       <>
       <Alphabet/>
-
     <main className="main">
      <div className="main__box">
         <section className="main__content">
-            <span>Main content</span>
+            <Hero/>
+            <WebSeries/>
+
         </section>
 
         <aside className="aside__left-bar">
-            <span>left bar</span>
+            <ContactUs/>
         </aside>
     </div>
     </main>

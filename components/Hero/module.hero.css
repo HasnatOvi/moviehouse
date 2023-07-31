@@ -1,0 +1,54 @@
+.hero{
+    display: flex;
+    width: 100%;
+    height: 290px;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.hero__box{
+    display: flex;
+    position: relative;
+}
+
+.hero__img{
+   object-fit: contain;
+   opacity: 0.88;
+
+}
+
+
+.hero__box p{
+    position: absolute;
+    left: 10px;
+    bottom: 110px;
+}
+
+.hero__box .yr-br{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+
+}
+
+.hero__box .yr-br span{
+    right: -376px;
+    bottom: 0;
+    position: absolute;
+    background: var(--dark-red);
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 12px;
+}
+.hero__box .yr-br p{
+    right: -270px;
+    bottom: 0;
+    position: absolute;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 14px;
+ }
+
